@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        #content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Empresa de Ciencia de Datos y Desarrollo de Software</h1>
+    </header>
+    <div id="content">
+        <h2>Nuestros Servicios</h2>
+        <p>Somos una empresa especializada en ciencia de datos y desarrollo de software. Ofrecemos soluciones innovadoras para tu negocio.</p>
+        <button id="cambiarTexto">Hacer clic para cambiar el texto</button>
+    </div>
+    <script>
+        // JavaScript para cambiar el texto del párrafo
+        document.getElementById('cambiarTexto').addEventListener('click', function() {
+            var parrafo = document.querySelector('p');
+            parrafo.textContent = '¡Texto cambiado con JavaScript!';
+        });
+    </script>
+</body>
+</html>
